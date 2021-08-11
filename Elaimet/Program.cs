@@ -25,13 +25,19 @@ namespace Elaimet
         static void Main(string[] args)
         {
             //Tässä luot luokasta olion
+            Hevonen hevonen = new Hevonen();
 
             //Tulosta olion nimi ja paino
+            Console.WriteLine("Nimi: " + hevonen.Nimi);
+            Console.WriteLine("Paino: " + hevonen.Paino);
 
             //Muuta olion nimeä ja painoa
+            hevonen.Nimi = "Histamiini";
+            hevonen.Paino = 89;
 
             //Tulosta nyt olion nimi ja paino, jotta varmistat että muutos tapahtui
-    
+            Console.WriteLine("Uusi nimi: " + hevonen.Nimi);
+            Console.WriteLine("Uusi paino: " + hevonen.Paino);
         }
     }
 }
